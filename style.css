@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+
+header{
+    min-height: 100vh;
+    background: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.app{
+    flex-basis: 50%;
+    height: 100%;
+    background: #353b483a;
+    padding: 10px;
+}
+.app_block{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.app_block input{
+    background: #353b48;
+    height: 50px;
+    width: 60%;
+    color: white;
+    padding: 10px 15px;
+    font-size: 17px;
+    border:none;
+    outline: none;
+}
+.app_block input::placeholder{
+    color: rgb(165, 165, 165);
+}
+.app_block input.search{
+    width: 35%;
+}
+.app_block button{
+    line-height: 55px;
+    width: 50px;
+    height: 50px;
+    margin: 0 1%;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.app_block button i{
+    font-size: 22px;
+}
+.app_block button.clear i{
+    transition: 0.2s;
+}
+.app_block button.clear:hover i{
+    transform: rotate(200deg);
+}
+
+.app_block button.clear{
+    color: #fff;
+    background: rgb(167, 47, 47);
+}
+.app_block button.clear i{
+    transform: rotate(45deg);
+}
+.app_block button.clear:hover{
+    background: rgb(122, 34, 34);
+    color: #fff;
+}
+.app_block button:hover{
+    background: #00b894;
+    color: #fff;
+}
+.app ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.app ul li{
+    color: #fff;
+    width: 100%;
+    min-height: 30px;
+    background: #353b48;
+    margin: 6px 0;
+    padding: 0 0 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.app ul li.active {
+    background: #1abc9c;
+}
+.app ul li.active p{
+    text-decoration: line-through;
+}
+.app ul li:hover{
+    background: #0c9b7e;
+    cursor: pointer;
+}
+.app ul li i{
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: 0.4s;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+}
+.app ul li .fas:hover{
+    background: rgb(167, 47, 47);
+}
+
+
+@keyframes push {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes delete{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+ 
